@@ -1,0 +1,108 @@
+@import '../../base.scss';
+:root {
+  --c-button-padding: 0 14px;
+  --c-button-height: 36px;
+  --c-button-border-radius: 4px;
+  --c-button-text-color: #ffffff;
+  --c-button-border-color: #d9d9d9;
+  --c-button-width: auto;
+  --c-button-font-size: 14px;
+}
+.c-button {
+  margin: 0;
+  line-height: 1;
+  font-family: inherit;
+  padding: var(--c-button-padding);
+  height: var(--c-button-height);
+  font-size: var(--c-button-font-size);
+  border-radius: var(--c-button-border-radius);
+  width: var(--c-button-width);
+  white-space: nowrap;
+  outline: none;
+  position: relative;
+  z-index: auto;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  -webkit-user-select: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: var(--c-button-text-color);
+  border: none;
+  box-shadow: none;
+}
+.c-button__primary {
+  background-color: var(--c-primary-color);
+}
+
+.c-button__primary:hover {
+  background-color: var(--c-primary-hover-color);
+}
+.c-button__primary:active {
+  background-color: var(--c-primary-active-color);
+}
+
+.c-button__primary:focus {
+  box-shadow: 0 0 0 2px lighten($color: $primary-color, $amount: 35%);
+}
+
+.c-button__warning {
+  background-color: var(--c-warning-color);
+}
+.c-button__warning:hover {
+  background-color: var(--c-waring-hover-color);
+}
+.c-button__warning:active {
+  background-color: var(--c-waring-active-color);
+}
+.c-button__warning:focus {
+  box-shadow: 0 0 0 2px lighten($color: $warning-color, $amount: 35%);
+}
+
+.c-button__danger {
+  background-color: var(--c-danger-color);
+}
+.c-button__danger:hover {
+  background-color: var(--c-danger-hover-color);
+}
+.c-button__danger:active {
+  background-color: var(--c-danger-active-color);
+}
+.c-button__danger:focus {
+  box-shadow: 0 0 0 2px lighten($color: $danger-color, $amount: 35%);
+}
+.c-button__success {
+  background-color: var(--c-success-color);
+}
+.c-button__success:hover {
+  background-color: var(--c-success-hover-color);
+}
+.c-button__success:active {
+  background-color: var(--c-success-active-color);
+}
+.c-button__success:focus {
+  box-shadow: 0 0 0 2px lighten($color: $success-color, $amount: 35%);
+}
+.c-button__info {
+  background-color: var(--c-info-color);
+}
+.c-button__info:hover {
+  background-color: var(--c-info-hover-color);
+}
+.c-button__info:active {
+  background-color: var(--c-info-active-color);
+}
+.c-button__info:focus {
+  box-shadow: 0 0 0 2px lighten($color: $info-color, $amount: 35%);
+}
+.c-button__disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@cooler-ui/button",
+  "version": "0.0.1",
+  "description": "button of cooler-ui",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@cooler-ui/styles": "workspace:*"
+  },
+  "license": "MIT"
+}

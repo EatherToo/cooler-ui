@@ -1,0 +1,32 @@
+$primary-color: #307cf4 !default;
+$warning-color: #f1a151 !default;
+$danger-color: #f5222d !default;
+$success-color: #52c41a !default;
+$info-color: #a5a7ac !default;
+:root {
+  --c-primary-color: #{$primary-color};
+  --c-primary-active-color: #{darken($color: $primary-color, $amount: 15%)};
+  --c-primary-hover-color: #{lighten($color: $primary-color, $amount: 2%)};
+  --c-primary-focus-color: #{darken($color: $primary-color, $amount: 10%)};
+  --c-primary-disabled-color: #{lighten($color: $primary-color, $amount: 20%)};
+  --c-warning-color: #{$warning-color};
+  --c-waring-active-color: #{darken($color: $warning-color, $amount: 15%)};
+  --c-waring-hover-color: #{lighten($color: $warning-color, $amount: 2%)};
+  --c-waring-focus-color: #{darken($color: $warning-color, $amount: 10%)};
+  --c-waring-disabled-color: #{lighten($color: $warning-color, $amount: 20%)};
+  --c-danger-color: #{$danger-color};
+  --c-danger-active-color: #{darken($color: $danger-color, $amount: 15%)};
+  --c-danger-hover-color: #{lighten($color: $danger-color, $amount: 2%)};
+  --c-danger-focus-color: #{darken($color: $danger-color, $amount: 10%)};
+  --c-danger-disabled-color: #{lighten($color: $danger-color, $amount: 20%)};
+  --c-success-color: #{$success-color};
+  --c-success-active-color: #{darken($color: $success-color, $amount: 15%)};
+  --c-success-hover-color: #{lighten($color: $success-color, $amount: 2%)};
+  --c-success-focus-color: #{darken($color: $success-color, $amount: 10%)};
+  --c-success-disabled-color: #{lighten($color: $success-color, $amount: 20%)};
+  --c-info-color: #{$info-color};
+  --c-info-active-color: #{darken($color: $info-color, $amount: 15%)};
+  --c-info-hover-color: #{lighten($color: $info-color, $amount: 2%)};
+  --c-info-focus-color: #{darken($color: $info-color, $amount: 10%)};
+  --c-info-disabled-color: #{lighten($color: $info-color, $amount: 20%)};
+}
