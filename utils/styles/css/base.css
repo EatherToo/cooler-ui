@@ -1,28 +1,29 @@
 :root {
+  --c-default-color: #91b9f9;
   --c-primary-color: #307cf4;
   --c-primary-active-color: #0b56cd;
   --c-primary-hover-color: #3a82f5;
-  --c-primary-focus-color: #0c60e5;
+  --c-primary-focus-shadow-color: #d9e7fd;
   --c-primary-disabled-color: #91b9f9;
   --c-warning-color: #f1a151;
-  --c-waring-active-color: #e37b12;
-  --c-waring-hover-color: #f2a65a;
-  --c-waring-focus-color: #ed8822;
-  --c-waring-disabled-color: #f9d4af;
+  --c-warning-active-color: #e37b12;
+  --c-warning-hover-color: #f2a65a;
+  --c-warning-focus-shadow-color: #fefaf6;
+  --c-warning-disabled-color: #f9d4af;
   --c-danger-color: #f5222d;
   --c-danger-active-color: #c20912;
   --c-danger-hover-color: #f52c36;
-  --c-danger-focus-color: #da0a15;
+  --c-danger-focus-shadow-color: #fdcdcf;
   --c-danger-disabled-color: #f9848a;
   --c-success-color: #52c41a;
   --c-success-active-color: #368011;
   --c-success-hover-color: #56cd1b;
-  --c-success-focus-color: #3f9714;
+  --c-success-focus-shadow-color: #baf29e;
   --c-success-disabled-color: #8ae95b;
   --c-info-color: #a5a7ac;
   --c-info-active-color: #7d8087;
   --c-info-hover-color: #aaacb1;
-  --c-info-focus-color: #8a8d94;
+  --c-info-focus-shadow-color: white;
   --c-info-disabled-color: #dadbdd;
 }
 

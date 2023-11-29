@@ -1,5 +1,5 @@
 export type CButtonProps = {
-  type?: 'primary' | 'success' | 'warning' | 'danger' | 'info' 
+  type?: 'default'|'primary' | 'success' | 'warning' | 'danger' | 'info' 
   size?: 'large' | 'medium' | 'small' | 'mini'
   icon?: string
   nativeType?: 'button' | 'submit' | 'reset'

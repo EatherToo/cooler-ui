@@ -3,12 +3,37 @@ import CButton from '@cooler-ui/button/src/button.vue'
 </script>
 
 <template>
-  <div style="display: flex; justify-content: space-around">
-    <CButton>Read the docs</CButton>
-    <CButton type="warning">Read the docs</CButton>
-    <CButton type="success">Read the docs</CButton>
-    <CButton type="info">Read the docs</CButton>
-    <CButton type="danger">Read the docs</CButton>
+  <div>
+    <CButton>Default</CButton>
+    <CButton type="primary">Primary</CButton>
+    <CButton type="warning">Warning</CButton>
+    <CButton type="success">Success</CButton>
+    <CButton type="info">Info</CButton>
+    <CButton type="danger">Danger</CButton>
+  </div>
+  <div>
+    <CButton plain>Default</CButton>
+    <CButton type="primary" plain>Primary</CButton>
+    <CButton type="warning" plain>Warning</CButton>
+    <CButton type="success" plain>Success</CButton>
+    <CButton type="info" plain>Info</CButton>
+    <CButton type="danger" plain>Danger</CButton>
+  </div>
+  <div>
+    <CButton round>Default</CButton>
+    <CButton type="primary" round>Primary</CButton>
+    <CButton type="warning" round>Warning</CButton>
+    <CButton type="success" round>Success</CButton>
+    <CButton type="info" round>Info</CButton>
+    <CButton type="danger" round>Danger</CButton>
+  </div>
+  <div>
+    <CButton round disabled>Default</CButton>
+    <CButton type="primary" round disabled>Primary</CButton>
+    <CButton type="warning" round disabled>Warning</CButton>
+    <CButton type="success" round disabled>Success</CButton>
+    <CButton type="info" round disabled>Info</CButton>
+    <CButton type="danger" round disabled>Danger</CButton>
   </div>
 </template>
 

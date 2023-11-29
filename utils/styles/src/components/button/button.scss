@@ -1,5 +1,5 @@
 @import '../../base.scss';
-:root {
+.c-button {
   --c-button-padding: 0 14px;
   --c-button-height: 36px;
   --c-button-border-radius: 4px;
@@ -7,16 +7,40 @@
   --c-button-border-color: #d9d9d9;
   --c-button-width: auto;
   --c-button-font-size: 14px;
+  --c-button-plain-primary-bg-color: #{mix(
+      $color1: $primary-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-button-plain-warning-bg-color: #{mix(
+      $color1: $warning-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-button-plain-danger-bg-color: #{mix(
+      $color1: $danger-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-button-plain-success-bg-color: #{mix(
+      $color1: $success-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-button-plain-info-bg-color: #{mix(
+      $color1: $info-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
 }
+.c-button + .c-button {
+  margin: 12px;
+}
+
 .c-button {
   margin: 0;
   line-height: 1;
   font-family: inherit;
-  padding: var(--c-button-padding);
-  height: var(--c-button-height);
-  font-size: var(--c-button-font-size);
-  border-radius: var(--c-button-border-radius);
-  width: var(--c-button-width);
   white-space: nowrap;
   outline: none;
   position: relative;
@@ -32,77 +56,189 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: normal;
-  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: var(--c-button-text-color);
+  transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
   border: none;
   box-shadow: none;
+  color: var(--c-button-text-color);
+  padding: var(--c-button-padding);
+  height: var(--c-button-height);
+  font-size: var(--c-button-font-size);
+  border-radius: var(--c-button-border-radius);
+  width: var(--c-button-width);
 }
+.c-button__rounded {
+  border-radius: var(--c-button-height);
+}
+.c-button__default {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid var(--c-button-border-color);
+}
+.c-button__default:hover {
+  background-color: var(--c-button-text-color);
+  border: 1px solid var(--c-default-color);
+  color: var(--c-primary-color);
+}
+
+.c-button__default:focus {
+  border: 1px solid var(--c-default-color);
+  color: var(--c-primary-color);
+  box-shadow: 0 0 0 2px var(--c-primary-focus-shadow-color);
+}
+.c-button__default:active {
+  background-color: var(--c-button-text-color);
+  border: 1px solid var(--c-primary-color);
+  color: var(--c-primary-color);
+}
+
 .c-button__primary {
   background-color: var(--c-primary-color);
+  border: 1px solid var(--c-primary-color);
+}
+
+.c-button-plain__primary {
+  background-color: var(--c-button-plain-primary-bg-color);
+  color: var(--c-primary-color);
 }
 
 .c-button__primary:hover {
   background-color: var(--c-primary-hover-color);
+  border-color: var(--c-primary-hover-color);
+  color: var(--c-button-text-color);
 }
 .c-button__primary:active {
   background-color: var(--c-primary-active-color);
+  border-color: var(--c-primary-active-color);
+  color: var(--c-button-text-color);
 }
 
 .c-button__primary:focus {
-  box-shadow: 0 0 0 2px lighten($color: $primary-color, $amount: 35%);
+  box-shadow: 0 0 0 2px var(--c-primary-focus-shadow-color);
 }
 
 .c-button__warning {
   background-color: var(--c-warning-color);
+  border: 1px solid var(--c-warning-color);
 }
+
+.c-button-plain__warning {
+  background-color: var(--c-button-plain-warning-bg-color);
+  color: var(--c-warning-color);
+}
+
 .c-button__warning:hover {
-  background-color: var(--c-waring-hover-color);
+  background-color: var(--c-warning-hover-color);
+  border-color: var(--c-warning-hover-color);
+  color: var(--c-button-text-color);
 }
 .c-button__warning:active {
-  background-color: var(--c-waring-active-color);
+  background-color: var(--c-warning-active-color);
+  border-color: var(--c-warning-active-color);
+  color: var(--c-button-text-color);
 }
 .c-button__warning:focus {
-  box-shadow: 0 0 0 2px lighten($color: $warning-color, $amount: 35%);
+  box-shadow: 0 0 0 2px var(--c-warning-focus-shadow-color);
 }
 
 .c-button__danger {
   background-color: var(--c-danger-color);
+  border: 1px solid var(--c-danger-color);
+}
+.c-button-plain__danger {
+  background-color: var(--c-button-plain-danger-bg-color);
+  color: var(--c-danger-color);
 }
 .c-button__danger:hover {
   background-color: var(--c-danger-hover-color);
+  border-color: var(--c-danger-hover-color);
+  color: var(--c-button-text-color);
 }
 .c-button__danger:active {
   background-color: var(--c-danger-active-color);
+  border-color: var(--c-danger-active-color);
+  color: var(--c-button-text-color);
 }
 .c-button__danger:focus {
-  box-shadow: 0 0 0 2px lighten($color: $danger-color, $amount: 35%);
+  box-shadow: 0 0 0 2px var(--c-danger-focus-shadow-color);
 }
 .c-button__success {
   background-color: var(--c-success-color);
+  border: 1px solid var(--c-success-color);
+}
+.c-button-plain__success {
+  background-color: var(--c-button-plain-success-bg-color);
+  color: var(--c-success-color);
 }
 .c-button__success:hover {
   background-color: var(--c-success-hover-color);
+  border-color: var(--c-success-hover-color);
+  color: var(--c-button-text-color);
 }
 .c-button__success:active {
   background-color: var(--c-success-active-color);
+  border-color: var(--c-success-active-color);
+  color: var(--c-button-text-color);
 }
 .c-button__success:focus {
-  box-shadow: 0 0 0 2px lighten($color: $success-color, $amount: 35%);
+  box-shadow: 0 0 0 2px var(--c-success-focus-shadow-color);
 }
 .c-button__info {
   background-color: var(--c-info-color);
+  border: 1px solid var(--c-info-color);
+}
+.c-button-plain__info {
+  background-color: var(--c-button-plain-info-bg-color);
+  color: var(--c-info-color);
 }
 .c-button__info:hover {
   background-color: var(--c-info-hover-color);
+  border-color: var(--c-info-hover-color);
+  color: var(--c-button-text-color);
 }
 .c-button__info:active {
   background-color: var(--c-info-active-color);
+  border-color: var(--c-info-active-color);
+  color: var(--c-button-text-color);
 }
 .c-button__info:focus {
-  box-shadow: 0 0 0 2px lighten($color: $info-color, $amount: 35%);
+  box-shadow: 0 0 0 2px var(--c-info-focus-shadow-color);
 }
 .c-button__disabled {
-  cursor: not-allowed;
   opacity: 0.5;
+  cursor: not-allowed;
   pointer-events: none;
+  &.c-button__primary:hover {
+    background-color: var(--c-primary-color);
+    border: 1px solid var(--c-primary-color);
+  }
+  &.c-button__warning:hover {
+    background-color: var(--c-warning-color);
+    border: 1px solid var(--c-warning-color);
+  }
+  &.c-button__danger:hover {
+    background-color: var(--c-danger-color);
+    border: 1px solid var(--c-danger-color);
+  }
+  &.c-button__success:hover {
+    background-color: var(--c-success-color);
+    border: 1px solid var(--c-success-color);
+  }
+  &.c-button__info:hover {
+    background-color: var(--c-info-color);
+    border: 1px solid var(--c-info-color);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: not-allowed;
+    background-color: transparent;
+    pointer-events: auto;
+  }
 }
