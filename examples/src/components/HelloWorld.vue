@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CButton from '@cooler-ui/button/src/button.vue'
+import { Alarm } from '@vicons/ionicons5'
 </script>
 
 <template>
@@ -34,6 +35,15 @@ import CButton from '@cooler-ui/button/src/button.vue'
     <CButton type="success" round disabled>Success</CButton>
     <CButton type="info" round disabled>Info</CButton>
     <CButton type="danger" round disabled>Danger</CButton>
+  </div>
+  <div>
+    <CButton type="primary" :startIcon="Alarm" />
+    <CButton type="primary" :startIcon="Alarm" round />
+    <CButton type="primary" :startIcon="Alarm"> Alarm </CButton>
+    <CButton type="primary" :startIcon="Alarm" loading> Alarm </CButton>
+    <CButton type="primary" :startIcon="Alarm" loading loadingPosition="right">
+      Alarm
+    </CButton>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
+import { type Component } from 'vue'
 export type CButtonProps = {
-  type?: 'default'|'primary' | 'success' | 'warning' | 'danger' | 'info' 
+  type?: 'default' | 'primary' | 'success' | 'warning' | 'danger' | 'info'
   size?: 'large' | 'medium' | 'small' | 'mini'
   icon?: string
   nativeType?: 'button' | 'submit' | 'reset'
@@ -9,4 +10,7 @@ export type CButtonProps = {
   autofocus?: boolean
   round?: boolean
   circle?: boolean
+  startIcon?: Component
+  endIcon?: Component
+  loadingPosition?: 'left' | 'right'
 }

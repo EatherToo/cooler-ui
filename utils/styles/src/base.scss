@@ -46,3 +46,16 @@ $info-color: #a5a7ac !default;
   --c-info-focus-shadow-color: #{lighten($color: $info-color, $amount: 35%)};
   --c-info-disabled-color: #{lighten($color: $info-color, $amount: 20%)};
 }
+
+.c-spin-animation {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

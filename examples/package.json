@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vue": "^3.3.8",
-    "@cooler-ui/button": "workspace:*"
+    "@cooler-ui/button": "workspace:*",
+    "@cooler-ui/icon": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",
