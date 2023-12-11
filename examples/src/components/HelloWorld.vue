@@ -45,6 +45,24 @@ import { Alarm } from '@vicons/ionicons5'
       Alarm
     </CButton>
   </div>
+
+  <div>
+    <CButton round text>Default</CButton>
+    <CButton text type="primary" plain>Primary</CButton>
+    <CButton text type="warning" round>Warning</CButton>
+    <CButton text type="success" round>Success</CButton>
+    <CButton text type="info" plain>Info</CButton>
+    <CButton text type="danger" round>Danger</CButton>
+  </div>
+
+  <div>
+    <CButton round text bg>Default</CButton>
+    <CButton text type="primary" plain bg>Primary</CButton>
+    <CButton text type="warning" round bg>Warning</CButton>
+    <CButton text type="success" round bg>Success</CButton>
+    <CButton text type="info" plain bg>Info</CButton>
+    <CButton text type="danger" round bg>Danger</CButton>
+  </div>
 </template>
 
 <style scoped></style>

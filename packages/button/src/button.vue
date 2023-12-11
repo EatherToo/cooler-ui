@@ -4,9 +4,11 @@
     @click="handleClick"
     :class="[
       `c-button__${props.type}`,
-      props.plain && `c-button-plain__${props.type}`,
+      (props.plain || props.text) && `c-button-plain__${props.type}`,
       (props.disabled || props.loading) && 'c-button__disabled',
       props.round && 'c-button__rounded',
+      props.text && 'c-button__text',
+      props.bg && props.text && 'c-button__text-bg',
     ]"
   >
     <CIcon

@@ -311,4 +311,36 @@
   --c-button-text-color: var(--c-info-color);
 }
 
+.c-button__text {
+  border: 0px solid transparent;
+  background-color: transparent;
+}
+.c-button__text:hover, .c-button__text:focus, .c-button__text:active {
+  box-shadow: none;
+}
+.c-button__text:hover.c-button__default, .c-button__text:focus.c-button__default, .c-button__text:active.c-button__default {
+  --c-button-text-color: #333333;
+}
+.c-button__text:hover.c-button__primary, .c-button__text:focus.c-button__primary, .c-button__text:active.c-button__primary {
+  --c-button-text-color: var(--c-primary-color);
+}
+.c-button__text:hover.c-button__warning, .c-button__text:focus.c-button__warning, .c-button__text:active.c-button__warning {
+  --c-button-text-color: var(--c-warning-color);
+}
+.c-button__text:hover.c-button__danger, .c-button__text:focus.c-button__danger, .c-button__text:active.c-button__danger {
+  --c-button-text-color: var(--c-danger-color);
+}
+.c-button__text:hover.c-button__success, .c-button__text:focus.c-button__success, .c-button__text:active.c-button__success {
+  --c-button-text-color: var(--c-success-color);
+}
+.c-button__text:hover.c-button__info, .c-button__text:focus.c-button__info, .c-button__text:active.c-button__info {
+  --c-button-text-color: var(--c-info-color);
+}
+.c-button__text.c-button__text-bg {
+  background-color: #f5f7fa;
+}
+.c-button__text:hover, .c-button__text:focus, .c-button__text:active {
+  background-color: #f0f2f5;
+}
+
 /*# sourceMappingURL=button.css.map */

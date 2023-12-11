@@ -13,4 +13,6 @@ export type CButtonProps = {
   startIcon?: Component
   endIcon?: Component
   loadingPosition?: 'left' | 'right'
+  text?: boolean
+  bg?: boolean
 }
