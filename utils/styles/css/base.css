@@ -25,6 +25,11 @@
   --c-info-hover-color: #aaacb1;
   --c-info-focus-shadow-color: white;
   --c-info-disabled-color: #dadbdd;
+  --c-plain-primary-color: #eaf2fe;
+  --c-plain-warning-color: #fef6ee;
+  --c-plain-danger-color: #fee9ea;
+  --c-plain-success-color: #eef9e8;
+  --c-plain-info-color: #f6f6f7;
 }
 
 .c-spin-animation {

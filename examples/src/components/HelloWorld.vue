@@ -30,10 +30,10 @@ import { Alarm } from '@vicons/ionicons5'
   </div>
   <div>
     <CButton round disabled>Default</CButton>
-    <CButton type="primary" round disabled>Primary</CButton>
+    <CButton type="primary" plain disabled>Primary</CButton>
     <CButton type="warning" round disabled>Warning</CButton>
     <CButton type="success" round disabled>Success</CButton>
-    <CButton type="info" round disabled>Info</CButton>
+    <CButton type="info" plain disabled>Info</CButton>
     <CButton type="danger" round disabled>Danger</CButton>
   </div>
   <div>

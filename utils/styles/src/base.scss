@@ -45,6 +45,32 @@ $info-color: #a5a7ac !default;
   --c-info-hover-color: #{lighten($color: $info-color, $amount: 2%)};
   --c-info-focus-shadow-color: #{lighten($color: $info-color, $amount: 35%)};
   --c-info-disabled-color: #{lighten($color: $info-color, $amount: 20%)};
+
+  --c-plain-primary-color: #{mix(
+      $color1: $primary-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-plain-warning-color: #{mix(
+      $color1: $warning-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-plain-danger-color: #{mix(
+      $color1: $danger-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-plain-success-color: #{mix(
+      $color1: $success-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
+  --c-plain-info-color: #{mix(
+      $color1: $info-color,
+      $color2: #ffffff,
+      $weight: 10%
+    )};
 }
 
 .c-spin-animation {
